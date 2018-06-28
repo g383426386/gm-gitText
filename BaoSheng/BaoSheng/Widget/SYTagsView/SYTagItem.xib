@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SYTagItem" id="gTV-IL-0wX" customClass="SYTagItem">
+            <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxi-UO-mqz">
+                        <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ9-Bq-YRn">
+                        <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qxi-UO-mqz" secondAttribute="trailing" priority="750" id="NZF-Fu-Jww"/>
+                <constraint firstAttribute="bottom" secondItem="Qxi-UO-mqz" secondAttribute="bottom" priority="750" id="Vh0-jv-Yui"/>
+                <constraint firstAttribute="bottom" secondItem="gQ9-Bq-YRn" secondAttribute="bottom" priority="750" id="XKN-QG-oSl"/>
+                <constraint firstItem="gQ9-Bq-YRn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" priority="750" id="Y9W-hg-iaD"/>
+                <constraint firstAttribute="trailing" secondItem="gQ9-Bq-YRn" secondAttribute="trailing" priority="750" id="Z61-lO-dA3"/>
+                <constraint firstItem="gQ9-Bq-YRn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" priority="750" id="ab4-qa-7Uk"/>
+                <constraint firstItem="Qxi-UO-mqz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" priority="750" id="wPn-Co-jMU"/>
+                <constraint firstItem="Qxi-UO-mqz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" priority="750" id="zYX-xz-NbQ"/>
+            </constraints>
+            <size key="customSize" width="111" height="118"/>
+            <connections>
+                <outlet property="bottom_" destination="Vh0-jv-Yui" id="ZJ5-a6-Jup"/>
+                <outlet property="defaultBtn_" destination="gQ9-Bq-YRn" id="ZVT-bt-2S7"/>
+                <outlet property="defaultTitleLab_" destination="Qxi-UO-mqz" id="anG-qP-gKx"/>
+                <outlet property="left_" destination="zYX-xz-NbQ" id="Hxz-KF-Bpt"/>
+                <outlet property="right_" destination="NZF-Fu-Jww" id="s6m-m5-9jN"/>
+                <outlet property="top_" destination="wPn-Co-jMU" id="L2r-PY-pEy"/>
+            </connections>
+            <point key="canvasLocation" x="241.5" y="299"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BSNineteenCell" id="gTV-IL-0wX" customClass="BSNineteenCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="238"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="238"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-w4-8bD">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="210"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB3-jT-vos">
+                        <rect key="frame" x="5" y="220" width="170" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Gen-Y2-PFw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PB3-jT-vos" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Fd0-fL-Xlz"/>
+                <constraint firstItem="iEl-w4-8bD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Z67-KF-AJK"/>
+                <constraint firstItem="PB3-jT-vos" firstAttribute="top" secondItem="iEl-w4-8bD" secondAttribute="bottom" constant="10" id="fPT-3t-SWX"/>
+                <constraint firstAttribute="trailing" secondItem="PB3-jT-vos" secondAttribute="trailing" constant="5" id="sd4-GC-rP3"/>
+                <constraint firstAttribute="trailing" secondItem="iEl-w4-8bD" secondAttribute="trailing" id="vIT-3d-VjC"/>
+                <constraint firstItem="iEl-w4-8bD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wVN-Fa-nLW"/>
+                <constraint firstAttribute="bottom" secondItem="PB3-jT-vos" secondAttribute="bottom" id="xsB-rz-BaN"/>
+            </constraints>
+            <size key="customSize" width="180" height="238"/>
+            <connections>
+                <outlet property="ImageView_" destination="iEl-w4-8bD" id="SzC-JN-ixi"/>
+                <outlet property="titlelb_" destination="PB3-jT-vos" id="Sku-st-Lfa"/>
+            </connections>
+            <point key="canvasLocation" x="90" y="146"/>
+        </collectionViewCell>
+    </objects>
+</document>

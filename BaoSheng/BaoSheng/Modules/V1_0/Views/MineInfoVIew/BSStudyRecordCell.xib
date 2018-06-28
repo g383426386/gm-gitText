@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="BSStudyRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-00-00 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSo-1F-itx">
+                        <rect key="frame" x="15" y="12" width="130" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="5H4-Dn-I1t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毛泽东思想" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtn-hj-Bno">
+                        <rect key="frame" x="155" y="13" width="94" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-BA-ysM">
+                        <rect key="frame" x="259" y="12" width="46" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="oNt-s5-T5U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0JL-BA-ysM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2zx-wW-cCa"/>
+                    <constraint firstItem="bSo-1F-itx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="7yX-wG-lqF"/>
+                    <constraint firstItem="0JL-BA-ysM" firstAttribute="leading" secondItem="qtn-hj-Bno" secondAttribute="trailing" constant="10" id="8dP-Nt-Du1"/>
+                    <constraint firstItem="bSo-1F-itx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PVJ-Fq-UNC"/>
+                    <constraint firstItem="qtn-hj-Bno" firstAttribute="leading" secondItem="bSo-1F-itx" secondAttribute="trailing" constant="10" id="Qrc-8w-psh"/>
+                    <constraint firstAttribute="trailing" secondItem="0JL-BA-ysM" secondAttribute="trailing" constant="15" id="kfw-5Z-0Hp"/>
+                    <constraint firstItem="qtn-hj-Bno" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kty-3f-rBb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="midllelb_" destination="qtn-hj-Bno" id="4X9-GL-XvN"/>
+                <outlet property="ringhtlb_" destination="0JL-BA-ysM" id="7xZ-vp-EQV"/>
+                <outlet property="timelb_" destination="bSo-1F-itx" id="RCt-9Q-FDh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

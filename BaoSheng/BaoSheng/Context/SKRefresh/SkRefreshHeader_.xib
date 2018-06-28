@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SKRefreshHeader">
+            <connections>
+                <outlet property="imageLoading_" destination="CUC-o2-Ae1" id="4lK-KQ-MZS"/>
+                <outlet property="imageStatus_" destination="a1W-P0-In2" id="4fo-9e-hSm"/>
+                <outlet property="labStatus_" destination="EAY-1X-Fz1" id="lLs-Ns-u51"/>
+                <outlet property="wrapperView_" destination="iN0-l3-epB" id="sOe-AG-eaY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkn-xs-2gW" userLabel="contentview">
+                    <rect key="frame" x="112" y="0.0" width="97" height="70"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refresh_1" translatesAutoresizingMaskIntoConstraints="NO" id="CUC-o2-Ae1">
+                            <rect key="frame" x="15" y="24" width="23" height="23"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="23" id="nFF-L5-xZq"/>
+                                <constraint firstAttribute="height" constant="23" id="sa9-Md-K2I"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉刷新" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAY-1X-Fz1">
+                            <rect key="frame" x="0.0" y="25" width="52" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="guO-hj-Oi0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refresh_loading" translatesAutoresizingMaskIntoConstraints="NO" id="a1W-P0-In2">
+                            <rect key="frame" x="62" y="12" width="35" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="9K5-PS-apt"/>
+                                <constraint firstAttribute="width" constant="35" id="Fjh-8C-86z"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="CUC-o2-Ae1" firstAttribute="centerY" secondItem="EAY-1X-Fz1" secondAttribute="centerY" id="ApE-OO-zEq"/>
+                        <constraint firstItem="EAY-1X-Fz1" firstAttribute="leading" secondItem="pkn-xs-2gW" secondAttribute="leading" id="kO1-fW-uGE"/>
+                        <constraint firstItem="a1W-P0-In2" firstAttribute="leading" secondItem="EAY-1X-Fz1" secondAttribute="trailing" constant="10" id="rfQ-9x-sFe"/>
+                        <constraint firstAttribute="trailing" secondItem="a1W-P0-In2" secondAttribute="trailing" id="rtg-JF-EFp"/>
+                        <constraint firstItem="CUC-o2-Ae1" firstAttribute="centerX" secondItem="EAY-1X-Fz1" secondAttribute="centerX" id="tIa-YM-eRe"/>
+                        <constraint firstItem="a1W-P0-In2" firstAttribute="centerY" secondItem="pkn-xs-2gW" secondAttribute="centerY" id="uBj-CU-o5w"/>
+                        <constraint firstItem="EAY-1X-Fz1" firstAttribute="centerY" secondItem="pkn-xs-2gW" secondAttribute="centerY" id="wPK-Ml-dI5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pkn-xs-2gW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0wT-BX-eFO"/>
+                <constraint firstAttribute="bottom" secondItem="pkn-xs-2gW" secondAttribute="bottom" id="F8W-94-i3Z"/>
+                <constraint firstItem="pkn-xs-2gW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="i4i-7S-56z"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="286" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="refresh_1" width="23" height="23"/>
+        <image name="refresh_loading" width="138" height="179"/>
+    </resources>
+</document>

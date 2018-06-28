@@ -1,0 +1,18 @@
+
+
+platform:ios,'8.0'
+
+use_frameworks!
+target 'BaoSheng' do
+
+pod 'ReactiveCocoa', '~> 2.4.2’
+pod 'SDWebImage' 
+pod 'IQKeyboardManager'
+pod 'AFNetworking', '~> 3.2.0'
+pod 'MBProgressHUD', '~> 1.1.0'
+pod 'SDCycleScrollView', '~> 1.75'
+pod 'MJRefresh'
+pod 'RongCloudIM/IMKit', '~> 2.8.3'
+pod 'YYText', '~> 1.0.7'
+
+end
