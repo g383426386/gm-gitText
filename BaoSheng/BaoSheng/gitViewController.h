@@ -1,5 +1,5 @@
 //
-//  GmViewController.h
+//  gitViewController.h
 //  BaoSheng
 //
 //  Created by GML on 2018/6/28.
@@ -8,6 +8,6 @@
 
 #import "BSBaseControl.h"
 
-@interface GmViewController : BSBaseControl
+@interface gitViewController : BSBaseControl
 
 @end

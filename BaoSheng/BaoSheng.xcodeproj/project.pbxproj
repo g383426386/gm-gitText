@@ -150,6 +150,7 @@
 		ABC6B12D20946C150001BEFB /* SubStudyListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC6B12B20946C150001BEFB /* SubStudyListCell.m */; };
 		ABC6B12E20946C150001BEFB /* SubStudyListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABC6B12C20946C150001BEFB /* SubStudyListCell.xib */; };
 		ABC6B131209470270001BEFB /* BSSubStudyListDto.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC6B130209470270001BEFB /* BSSubStudyListDto.m */; };
+		ABC74F6E20E5346400FB226A /* gitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC74F6D20E5346400FB226A /* gitViewController.m */; };
 		ABDD93AB208D782200317C37 /* NSObject+SKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDD93A7208D782200317C37 /* NSObject+SKRequest.m */; };
 		ABDD93AC208D782200317C37 /* AFHTTPRequestSerializer+SKHttpHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDD93AA208D782200317C37 /* AFHTTPRequestSerializer+SKHttpHeaders.m */; };
 		ABDD93B0208D786700317C37 /* NSObject+MTJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDD93AF208D786700317C37 /* NSObject+MTJSONUtils.m */; };
@@ -468,6 +469,8 @@
 		ABC6B12C20946C150001BEFB /* SubStudyListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubStudyListCell.xib; sourceTree = "<group>"; };
 		ABC6B12F209470270001BEFB /* BSSubStudyListDto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSSubStudyListDto.h; sourceTree = "<group>"; };
 		ABC6B130209470270001BEFB /* BSSubStudyListDto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSSubStudyListDto.m; sourceTree = "<group>"; };
+		ABC74F6C20E5346400FB226A /* gitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gitViewController.h; sourceTree = "<group>"; };
+		ABC74F6D20E5346400FB226A /* gitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gitViewController.m; sourceTree = "<group>"; };
 		ABDD93A7208D782200317C37 /* NSObject+SKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SKRequest.m"; sourceTree = "<group>"; };
 		ABDD93A8208D782200317C37 /* AFHTTPRequestSerializer+SKHttpHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+SKHttpHeaders.h"; sourceTree = "<group>"; };
 		ABDD93A9208D782200317C37 /* NSObject+SKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SKRequest.h"; sourceTree = "<group>"; };
@@ -1226,6 +1229,8 @@
 				ABFC8DC02086EEC200A7B42A /* ExtraLib */,
 				ABFC8DC12086EEC200A7B42A /* Widget */,
 				ABFC8DC62086EEC300A7B42A /* Resource */,
+				ABC74F6C20E5346400FB226A /* gitViewController.h */,
+				ABC74F6D20E5346400FB226A /* gitViewController.m */,
 			);
 			path = BaoSheng;
 			sourceTree = "<group>";
@@ -1792,6 +1797,7 @@
 				AB0C4349208F147C00EF244D /* ActionSheetLocalePicker.m in Sources */,
 				ABEBDB832099ADB90000F438 /* BSDefaultView.m in Sources */,
 				AB0C4329208F139500EF244D /* SKCustomSheetPicker.m in Sources */,
+				ABC74F6E20E5346400FB226A /* gitViewController.m in Sources */,
 				AB0CF057208CA0830083E75D /* STSHUdHelper.m in Sources */,
 				AB3778362087259100CFFFED /* View+MASAdditions.m in Sources */,
 				AB0C4326208F139500EF244D /* SKCustomChinaLocalePicker.m in Sources */,
